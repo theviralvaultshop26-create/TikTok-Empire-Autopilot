@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — TikTok Empire Autopilot</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           max-width: 820px; margin: 60px auto; padding: 0 24px;
+           color: #1a1a2e; line-height: 1.7; }
+    h1   { font-size: 2rem; border-bottom: 3px solid #00d4ff; padding-bottom: 12px; }
+    h2   { font-size: 1.2rem; margin-top: 2rem; color: #0f3460; }
+    p, li { font-size: 0.97rem; }
+    .updated { color: #888; font-size: 0.9rem; }
+    a    { color: #0f3460; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ddd; padding: 10px 14px; font-size: 0.92rem; }
+    th { background: #f0f8ff; }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: April 2026</p>
+
+<h2>1. Overview</h2>
+<p>
+  TikTok Empire Autopilot ("the App") is a locally-installed automation tool for
+  individual TikTok Shop sellers. This Privacy Policy explains what data the App
+  accesses, how it is used, and how it is protected.
+</p>
+<p>
+  <strong>The App does not operate a server, database, or cloud storage. All data
+  remains on your local device.</strong>
+</p>
+
+<h2>2. Data We Access via TikTok API</h2>
+<p>
+  When you authorize the App through TikTok's OAuth 2.0 flow, the App requests
+  the following permissions:
+</p>
+<table>
+  <tr>
+    <th>Scope</th>
+    <th>What It Accesses</th>
+    <th>Why It's Needed</th>
+  </tr>
+  <tr>
+    <td><code>user.info.basic</code></td>
+    <td>TikTok username, display name, avatar URL, follower count</td>
+    <td>To confirm the connected account and display account status in the App</td>
+  </tr>
+  <tr>
+    <td><code>video.upload</code></td>
+    <td>Ability to upload video files to TikTok</td>
+    <td>To publish product review videos to your TikTok account</td>
+  </tr>
+  <tr>
+    <td><code>video.publish</code></td>
+    <td>Ability to publish uploaded videos as TikTok posts</td>
+    <td>To complete the video posting workflow (upload + publish)</td>
+  </tr>
+  <tr>
+    <td><code>video.list</code></td>
+    <td>Read-only list of your posted TikTok videos</td>
+    <td>To display posting history in the App dashboard</td>
+  </tr>
+</table>
+
+<h2>3. How Data Is Stored</h2>
+<p>All data accessed by the App is stored exclusively on your local device:</p>
+<ul>
+  <li><strong>Access tokens and credentials</strong> — stored in a local <code>.env</code>
+      file on your machine, never transmitted to any third-party server.</li>
+  <li><strong>Generated content</strong> (video scripts, captions, payloads) — saved as
+      plain text files in the local <code>outputs/</code> folder on your machine.</li>
+  <li><strong>No analytics, telemetry, or usage data</strong> is collected or transmitted
+      by the App.</li>
+</ul>
+
+<h2>4. Third-Party Services</h2>
+<p>
+  The App integrates with the following third-party APIs. Their respective privacy
+  policies apply to data sent to those services:
+</p>
+<ul>
+  <li><strong>TikTok API</strong> — <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank">TikTok Privacy Policy</a></li>
+  <li><strong>Anthropic (Claude AI)</strong> — used to generate product research and video scripts.
+      Product names and marketing prompts are sent. No personal user data is sent.
+      <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Privacy Policy</a></li>
+  <li><strong>Serper.dev</strong> — used for Google search queries about trending products.
+      Only search query strings are sent, no personal data.
+      <a href="https://serper.dev/privacy-policy" target="_blank">Serper Privacy Policy</a></li>
+</ul>
+
+<h2>5. Data Sharing</h2>
+<p>
+  The App does not sell, rent, or share your personal data or TikTok account
+  information with any third parties beyond what is described in Section 4.
+</p>
+
+<h2>6. Token Security</h2>
+<p>
+  Your TikTok access tokens are stored locally in a <code>.env</code> file on your
+  device. You are responsible for securing access to this file. Tokens expire
+  automatically (access token: 24 hours; refresh token: 365 days) and can be
+  manually revoked at any time via:
+</p>
+<ul>
+  <li>The App's Settings page → TikTok → Revoke Access</li>
+  <li>TikTok's website → Settings → Security → Manage app permissions</li>
+</ul>
+
+<h2>7. Children's Privacy</h2>
+<p>
+  The App is intended for business use by adults (18+). It is not directed at
+  children and does not knowingly collect data from anyone under 18.
+</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>
+  This Privacy Policy may be updated from time to time. The "Last updated" date
+  at the top of this page will reflect any changes.
+</p>
+
+<h2>9. Contact</h2>
+<p>
+  For privacy-related questions, contact:
+  <a href="mailto:theviralvaultshop26@gmail.com">theviralvaultshop26@gmail.com</a>
+</p>
+
+</body>
+</html>
